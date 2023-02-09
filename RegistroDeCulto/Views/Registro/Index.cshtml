@@ -1,0 +1,137 @@
+﻿@model IEnumerable<RegistroDeCulto.Models.Culto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Registro de Culto</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Inicio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Fim)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.PalavraInicial)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HinosHarpa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OracaoOportunidades)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Oportunidades)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LouvorOfertas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OracaoOfertas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OracaoPreleitor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preleitor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mensagem)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Adultos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Criancas)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Total)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Avisos)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OracaoFinal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BencaoApostolica)
+            </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Inicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fim)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.PalavraInicial)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HinosHarpa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OracaoOportunidades)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Oportunidades)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LouvorOfertas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OracaoOfertas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OracaoPreleitor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Preleitor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mensagem)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adultos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Criancas)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Total)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Avisos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OracaoFinal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BencaoApostolica)
+            </td>*@
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
