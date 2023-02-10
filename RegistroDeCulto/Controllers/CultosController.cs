@@ -19,6 +19,18 @@ namespace RegistroDeCulto.Controllers
             _context = context;
         }
 
+        public IActionResult Unidades()
+        {
+            return View();
+        }
+
+        public IActionResult QuemSomos()
+        {
+            return View();
+        }
+
+
+
         // GET: Cultos
         public async Task<IActionResult> Index()
         {
