@@ -1,0 +1,126 @@
+﻿@model RegistroDeCulto.Models.Culto
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Culto</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Inicio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Inicio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fim)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fim)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PalavraInicial)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PalavraInicial)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HinosHarpa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HinosHarpa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OracaoOportunidades)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OracaoOportunidades)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Oportunidades)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Oportunidades)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LouvorOfertas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LouvorOfertas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OracaoOfertas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OracaoOfertas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OracaoPreleitor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OracaoPreleitor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Preleitor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Preleitor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mensagem)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mensagem)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Adultos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Adultos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Criancas)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Criancas)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Avisos)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Avisos)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OracaoFinal)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OracaoFinal)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BencaoApostolica)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BencaoApostolica)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

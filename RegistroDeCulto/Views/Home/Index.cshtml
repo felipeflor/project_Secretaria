@@ -2,7 +2,250 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+     <!-- CSS -->
+     <style>
+        .tm-social {
+          width: 50px;
+          height: 50px;
+        }
+      </style>
+      <!-- /CSS -->
+
+    <title>Alto das Oliveiras</title>
+</head>
+
+<body>
+
+    <!-- Menu antigo
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Alto das Oliveiras</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        -->
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="home.html">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="QuemSomos.html">Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Programacao.html">Programação</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Unidades.html">Unidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="FaleConosco.html">Fale Conosco</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Ação</a>
+                        <a class="dropdown-item" href="#">Outra ação</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Algo mais aqui</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <!-- /Menu -->
+
+
+    <div class="container">
+        <!-- Carousel -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/1280x720.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Assembléia de Deus</h5>
+                        <p>Campo Sede - SP</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="img/e4f47816f076661d781e823235ec1569.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Assembléia de Deus</h5>
+                        <p>Campo Francisco Morato - SP</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100" src="img/e4f47816f076661d781e823235ec1569.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Assembléia de Deus</h5>
+                        <p>Campo Sitio do Açude - BA</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item ">
+                    <img class="d-block w-100"
+                        src="img/USA_Mountains_Lake_Scenery_Maroon_Bells_Aspen_592271_1280x720.jpg"
+                        alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Assembléia de Deus</h5>
+                        <p>Campo Iborepi - CE</p>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+        <!-- /Carousel -->
+
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-5">João 3:16</h1>
+                <p class="lead">Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.
+                </p>
+            </div>
+        </div>
+        <!-- /Jumbotron -->
+
+        <!-- Card -->
+        <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="https://s.bibliaon.com/img/imagens/jo/ai/joai_o_16_33.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://s.bibliaon.com/img/imagens/jo/ai/joai_o_16_33.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="https://s.bibliaon.com/img/imagens/jo/ai/joai_o_16_33.jpg" alt="Imagem de capa do card">
+              <div class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em ação.</p>
+                <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+              </div>
+            </div>
+          </div>
+          <!-- /Card -->
+
+          <!-- Texto e vídeo-->
+        <div class="row mt-5 mb-5">
+        <div class="col-md-6">
+          <h3>Texto teste</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime cumque molestias voluptas sequi iusto voluptate, iste maiores velit optio commodi nihil saepe quia qui harum deserunt debitis eos possimus illum?</p>
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed maxime nostrum, quia exercitationem rerum debitis beatae dignissimos, adipisci provident illo explicabo sit ab. Cupiditate id laudantium, libero cumque nam expedita!</p>
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed maxime nostrum, quia exercitationem rerum debitis beatae dignissimos, adipisci provident illo explicabo sit ab. Cupiditate id laudantium, libero cumque nam expedita!</p>
+        </div>
+  
+        <div class="col-md-6">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/MBg5g2g3okU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+  
+      </div>
+  
+      <!-- /Texto e vídeo-->
+
+        <!-- Rodapé -->
+        @*<hr>
+        <footer>
+            <div class="row mb-3">
+        
+                <div class="col-md-12 d-flex justify-content-center">
+        
+                    <a href="https://pt-br.facebook.com/altodasoliveirasad/" target="_blank" class="p-3">
+                        <img class="tm-social" src="img/facebook.png" alt="Logo do Facebook">
+                    </a>
+        
+                    <a href="https://instagram.com/assembleia35/" target="_blank" class="p-3">
+                        <img class="tm-social" src="img/instagram.png" alt="Logo do Instagram">
+                    </a>
+        
+                </div>
+        
+                <div class="row text-center">
+                    <div class="col-md-12 text-center">
+                        <p class="text-center">
+                            Todos os direitos reservados: Felipe Flor &copy
+                        </p>
+        
+                    </div>
+                </div>
+        
+        </footer>*@
+        <!-- Rodapé -->
+
+          
+
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
